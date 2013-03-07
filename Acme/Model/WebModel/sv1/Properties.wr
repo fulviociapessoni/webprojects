@@ -1,4 +1,4 @@
-<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1" name="Acme Web" homePage="sv1#page1" landmarks="sv1#page1 sv1#area1 sv1#area2 sv1#page7">
+<SiteView xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1" name="Acme Web" homePage="sv1#page1" landmarks="sv1#page1 sv1#area1 sv1#area2 sv1#page7">
   <OperationUnits>
     <LoginUnit id="sv1#lgu2" name="Administration Login" gr:x="438" gr:y="76">
       <KOLink id="sv1#lgu2#kln2" name="KO-Link 2" to="sv1#page1"/>
