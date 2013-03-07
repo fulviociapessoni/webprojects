@@ -14,7 +14,7 @@
       </Selector>
       <Link id="sv1#page1#dau15#ln29" name="See details" to="sv1#area2#page13#dau12" type="normal" automaticCoupling="true" validate="true"/>
     </DataUnit>
-    <DataUnit id="sv1#page1#dau16" name="Product of the day" entity="ent1" gr:x="0" gr:y="5" displayAttributes="ent1#att10 ent1#att11 ent1#att12">
+    <DataUnit id="sv1#page1#dau16" name="Product of the day" entity="ent1" gr:x="0" gr:y="5" displayAll="true" linkOrder="sv1#page1#dau16#ln30">
       <Selector booleanOperator="and" defaultPolicy="fill" id="sv1#page1#dau16#dau16sel">
         <AttributesCondition id="sv1#page1#dau16#dau16sel#cond4" attributes="ent1#att23" name="highlight" implied="false" value="true" booleanOperator="or" predicate="eq"/>
       </Selector>
@@ -33,10 +33,13 @@
       </layout:Cell>
       <layout:Cell>
         <layout:Unit unitId="sv1#page1#dau16">
+          <layout:Link link="sv1#page1#dau16#ln30"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att9"/>
           <layout:Attribute attribute="ent1#att10"/>
           <layout:Attribute attribute="ent1#att11"/>
           <layout:Attribute attribute="ent1#att12"/>
-          <layout:Link link="sv1#page1#dau16#ln30"/>
+          <layout:Attribute attribute="ent1#att23"/>
         </layout:Unit>
       </layout:Cell>
     </layout:Row>
