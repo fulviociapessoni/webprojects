@@ -1,0 +1,39 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area5#page24" name="Technical record" gr:x="955" gr:y="310">
+  <ContentUnits>
+    <DataUnit id="sv2#area5#page24#dau8" name="New product details" entity="ent1" gr:x="0" gr:y="0" displayAttributes="ent1#att8 ent1#att9 ent1#att10 ent1#att11 ent1#att12 ent1#att23 ">
+      <Selector id="sv2#area5#page24#dau8#dau8sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page24#dau8#dau8sel#dau8key" predicate="in"/>
+      </Selector>
+      <Link id="sv2#area5#page24#dau8#ln73" name="Create Technical Record" to="sv2#area5#cnu3" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <EntryUnit id="sv2#area5#page24#enu9" name="New technical record" gr:x="162" gr:y="4">
+      <Field id="sv2#area5#page24#enu9#fld35" name="colors" modifiable="true" hidden="false" type="blob"/>
+      <Field id="sv2#area5#page24#enu9#fld36" name="dimensions" modifiable="true" hidden="false" type="string"/>
+      <Link id="sv2#area5#page24#enu9#ln88" name="Create" to="sv2#area5#cru7" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page24#enu9#ln88#par47" name="colors" source="sv2#area5#page24#enu9#fld35" target="sv2#area5#cru7.ent2#att17" blank="false"/>
+        <LinkParameter id="sv2#area5#page24#enu9#ln88#par48" name="dimensions" source="sv2#area5#page24#enu9#fld36" target="sv2#area5#cru7.ent2#att18" blank="false"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page24#dau8">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Attribute attribute="ent1#att23"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page24#enu9">
+          <layout:Field field="sv2#area5#page24#enu9#fld35"/>
+          <layout:Field field="sv2#area5#page24#enu9#fld36"/>
+          <layout:Link link="sv2#area5#page24#enu9#ln88"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

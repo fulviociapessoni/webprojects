@@ -1,0 +1,20 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="173" gr:y="0" id="mov1#opm2#opg2" name="Database Transaction" transaction="true">
+  <OperationUnits>
+    <ConnectUnit id="mov1#opm2#opg2#cnu6" gr:x="55" gr:y="108" name="Connect image" relationship="rel11#rel5">
+      <SourceSelector id="mov1#opm2#opg2#cnu6#su11" booleanOperator="and">
+        <KeyCondition id="mov1#opm2#opg2#cnu6#su11#kcond6" predicate="in" name="BigImageOid"/>
+      </SourceSelector>
+      <TargetSelector id="mov1#opm2#opg2#cnu6#su12" booleanOperator="and">
+        <KeyCondition id="mov1#opm2#opg2#cnu6#su12#kcond7" predicate="in" name="ProductOid"/>
+      </TargetSelector>
+      <KOLink id="mov1#opm2#opg2#cnu6#kln38" name="Connect Failed" to="mov1#opm2#kocu4"/>
+      <OKLink id="mov1#opm2#opg2#cnu6#oln23" name="Create Succeded" to="mov1#opm2#okcu2">
+        <LinkParameter id="mov1#opm2#opg2#cnu6#oln23#par59" name="Target OID [Product]_dau7key [OID]" source="targetent1#att24" target="mov1#opm2#okcu2#ocp1"/>
+      </OKLink>
+    </ConnectUnit>
+    <CreateUnit id="mov1#opm2#opg2#cru3" gr:x="0" gr:y="0" name="Create image" entity="ent3">
+      <OKLink id="mov1#opm2#opg2#cru3#oln24" name="Connect BigImage to Product" to="mov1#opm2#opg2#cnu6" automaticCoupling="true"/>
+      <KOLink id="mov1#opm2#opg2#cru3#kln7" name="Create Failed" to="mov1#opm2#kocu4"/>
+    </CreateUnit>
+  </OperationUnits>
+</OperationGroup>

@@ -1,0 +1,20 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="152" gr:y="454" id="mov1#opm2" name="Add product image">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="138" id="mov1#opm2#icu2" name="Input Collector">
+      <InputCollectorParameter id="mov1#opm2#icu2#icp4" name="Description"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp5" name="ProductOid"/>
+      <InputCollectorParameter id="mov1#opm2#icu2#icp6" name="Image"/>
+      <Link id="mov1#opm2#icu2#ln45" name="Connect Image" to="mov1#opm2#opg2#cnu6" type="transport" validate="true">
+        <LinkParameter id="mov1#opm2#icu2#ln45#par97" name="ProductOid_ProductOid [OID] [Product] [Target]" source="mov1#opm2#icu2#icp5" target="mov1#opm2#opg2#cnu6#su12#kcond7.ent1#att24"/>
+      </Link>
+      <OKLink id="mov1#opm2#icu2#oln25" name="Create BigImage" to="mov1#opm2#opg2#cru3">
+        <LinkParameter id="mov1#opm2#icu2#oln25#par94" name="Description_description" source="mov1#opm2#icu2#icp4" target="mov1#opm2#opg2#cru3.ent3#att1"/>
+        <LinkParameter id="mov1#opm2#icu2#oln25#par95" name="Image_picture" source="mov1#opm2#icu2#icp6" target="mov1#opm2#opg2#cru3.ent3#att2"/>
+      </OKLink>
+    </InputCollectorUnit>
+    <KOCollectorUnit gr:x="452" gr:y="40" id="mov1#opm2#kocu4" name="Create Failed"/>
+    <OKCollectorUnit gr:x="453" gr:y="153" id="mov1#opm2#okcu2" name="Create Succeded">
+      <OutputCollectorParameter id="mov1#opm2#okcu2#ocp1" name="ProductOid"/>
+    </OKCollectorUnit>
+  </OperationUnits>
+</OperationModule>

@@ -1,0 +1,18 @@
+<OperationModule xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="150" gr:y="0" id="mov1#opm1" name="Delete products">
+  <OperationUnits>
+    <InputCollectorUnit gr:x="0" gr:y="269" id="mov1#opm1#icu1" name="Input Collector">
+      <InputCollectorParameter id="mov1#opm1#icu1#icp3" name="ProductOids"/>
+      <Link id="mov1#opm1#icu1#ln38" name="Link 35" to="mov1#opm1#opg1#dlu12" type="transport" validate="true">
+        <LinkParameter id="mov1#opm1#icu1#ln38#par98" name="ProductOids_ProductOids [OID]" source="mov1#opm1#icu1#icp3" target="mov1#opm1#opg1#dlu12#su7#kcond3.ent1#att24"/>
+      </Link>
+      <OKLink id="mov1#opm1#icu1#oln18" name="Delete TechRecord" to="mov1#opm1#opg1#dlu13">
+        <LinkParameter id="mov1#opm1#icu1#oln18#par44" name="Checked Objects_2_recordOfproduct" source="mov1#opm1#icu1#icp3" target="mov1#opm1#opg1#dlu13#su8#rcond5.ent1#att24"/>
+      </OKLink>
+      <Link id="mov1#opm1#icu1#ln39" name="Link 36" to="mov1#opm1#opg1#dlu11" type="transport" validate="true">
+        <LinkParameter id="mov1#opm1#icu1#ln39#par45" name="Checked Objects_2_ImagesOfProduct" source="mov1#opm1#icu1#icp3" target="mov1#opm1#opg1#dlu11#su6#rcond4.ent1#att24"/>
+      </Link>
+    </InputCollectorUnit>
+    <OKCollectorUnit gr:x="527" gr:y="308" id="mov1#opm1#okcu1" name="Delete Succeded"/>
+    <KOCollectorUnit gr:x="325" gr:y="312" id="mov1#opm1#kocu1" name="Delete Failed"/>
+  </OperationUnits>
+</OperationModule>

@@ -1,0 +1,22 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area4" name="Store editing" gr:x="119" gr:y="122" landmark="true" defaultPage="sv2#area4#page20">
+  <OperationUnits>
+    <CreateUnit id="sv2#area4#cru6" name="Create store" entity="ent5" gr:x="372" gr:y="145">
+      <OKLink id="sv2#area4#cru6#ln70" name="Created Store" to="sv2#area4#page20" gr:bendpoints="-45,78,128,89"/>
+      <KOLink id="sv2#area4#cru6#kln19" name="Create Failed" to="sv2#area4#page20" gr:bendpoints="-34,-74,139,-63"/>
+    </CreateUnit>
+    <DeleteUnit id="sv2#area4#dlu5" name="Delete store" entity="ent5" gr:x="188" gr:y="0">
+      <Selector id="sv2#area4#dlu5#dlu5sel" booleanOperator="and">
+        <KeyCondition id="sv2#area4#dlu5#dlu5sel#dlu5key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area4#dlu5#ln66" name="Deleted Store" to="sv2#area4#page20" gr:bendpoints="-72,36,-84,-98"/>
+      <KOLink id="sv2#area4#dlu5#kln20" name="Delete Failed" to="sv2#area4#page20" gr:bendpoints="71,25,23,-88"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv2#area4#mfu4" name="Modify store" entity="ent5" gr:x="0" gr:y="335">
+      <Selector id="sv2#area4#mfu4#mfu4sel" booleanOperator="and">
+        <KeyCondition id="sv2#area4#mfu4#mfu4sel#mfu4key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area4#mfu4#ln71" name="Store Modified" to="sv2#area4#page17#dau4" automaticCoupling="true" gr:bendpoints="50,-43,-90,-36"/>
+      <KOLink id="sv2#area4#mfu4#kln18" name="Modify Failed" to="sv2#area4#page17"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

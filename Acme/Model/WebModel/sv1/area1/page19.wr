@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area1#page19" name="Product search" gr:x="0" gr:y="405" landmark="true">
+  <ContentUnits>
+    <EntryUnit id="sv1#area1#page19#flu2" name="Search products" gr:x="0" gr:y="15" linkOrder="sv1#area1#page19#flu2#ln48">
+      <Field id="sv1#area1#page19#flu2#flu2src3" name="Keyword" modifiable="true" hidden="false" type="string"/>
+      <Link id="sv1#area1#page19#flu2#ln48" name="Search" to="sv1#area1#page19#pwu4" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page19#flu2#ln48#par6" name="Name_2_Name" source="sv1#area1#page19#flu2#flu2src3" target="sv1#area1#page19#pwu4#su4#acond3" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit id="sv1#area1#page19#pwu4" entity="ent1" displayAttributes="ent1#att8 ent1#att10 " sortable="true" checkable="false" useCountQuery="false" name="Products found" gr:x="135" gr:y="0" linkOrder="sv1#area1#page19#pwu4#ln37">
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <Selector id="sv1#area1#page19#pwu4#su4" defaultPolicy="fill" booleanOperator="and">
+        <AttributesCondition id="sv1#area1#page19#pwu4#su4#acond3" attributes="ent1#att10 ent1#att9" predicate="contains" booleanOperator="or" implied="false" name="Name" ignoreCase="true"/>
+      </Selector>
+      <Link id="sv1#area1#page19#pwu4#ln37" name="See details" to="sv1#area1#page2#dau1" type="normal" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent1#att8" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att10" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area1#page19#flu2">
+          <layout:Field field="sv1#area1#page19#flu2#flu2src3"/>
+          <layout:Link link="sv1#area1#page19#flu2#ln48"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area1#page19#pwu4">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv1#area1#page19#pwu4#ln37"/>
+          <layout:Link link="sv1#area1#page19#pwu4ent1#att10"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?webml version="4.2.7"?>
+
+<WebProject xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:showUnitContent="true" gr:showTooltip="true" outputPath="${webapps_loc}/${project_name}" httpPort="8080" httpsPort="8443" enableBrowserIntegration="true">
+  <ServiceDataProviders/>
+</WebProject>

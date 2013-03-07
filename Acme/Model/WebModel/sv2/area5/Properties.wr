@@ -1,0 +1,80 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area5" name="Product Editing" gr:x="65" gr:y="885" landmarks="sv2#area5#page8" landmark="true" defaultPage="sv2#area5#page25">
+  <OperationUnits>
+    <ConnectUnit id="sv2#area5#cnu3" name="Connect to product" gr:x="935" gr:y="505" relationship="rel10#rel4">
+      <SourceSelector booleanOperator="and" id="sv2#area5#cnu3#cnu3ssel">
+        <KeyCondition id="sv2#area5#cnu3#cnu3ssel#cnu3SourceKey" predicate="in"/>
+      </SourceSelector>
+      <TargetSelector booleanOperator="and" id="sv2#area5#cnu3#cnu3tsel">
+        <KeyCondition id="sv2#area5#cnu3#cnu3tsel#cnu3TargetKey" predicate="in"/>
+      </TargetSelector>
+      <OKLink id="sv2#area5#cnu3#ln76" name="To the Product Details" to="sv2#area5#page21#dau11" automaticCoupling="true"/>
+      <KOLink id="sv2#area5#cnu3#kln29" name="Connect Failed" to="sv2#area5#page24"/>
+    </ConnectUnit>
+    <ConnectUnit id="sv2#area5#cnu1" name="Connect to category" gr:x="890" gr:y="615" relationship="rel12#rel7">
+      <SourceSelector booleanOperator="and" id="sv2#area5#cnu1#cnu1ssel">
+        <KeyCondition id="sv2#area5#cnu1#cnu1ssel#cnu1SourceKey" predicate="in"/>
+      </SourceSelector>
+      <TargetSelector booleanOperator="and" id="sv2#area5#cnu1#cnu1tsel">
+        <KeyCondition id="sv2#area5#cnu1#cnu1tsel#cnu1TargetKey" predicate="in"/>
+      </TargetSelector>
+      <OKLink id="sv2#area5#cnu1#oln6" name="OK-Link 6" to="sv2#area5#page21#dau11" automaticCoupling="true" gr:bendpoints="-104,59,246,42"/>
+      <KOLink id="sv2#area5#cnu1#kln5" name="KO-Link 5" to="sv2#area5#page21#dau11" automaticCoupling="true" gr:bendpoints="-96,83,254,66"/>
+    </ConnectUnit>
+    <CreateUnit id="sv2#area5#cru7" name="Create technical record" entity="ent2" gr:x="1120" gr:y="515">
+      <OKLink id="sv2#area5#cru7#ln74" name="CreatedTechnical Record" to="sv2#area5#cnu3" automaticCoupling="true"/>
+      <KOLink id="sv2#area5#cru7#kln28" name="Create Failed" to="sv2#area5#page24"/>
+    </CreateUnit>
+    <CreateUnit id="sv2#area5#cru9" name="Create product" entity="ent1" gr:x="830" gr:y="335">
+      <OKLink id="sv2#area5#cru9#ln87" name="Created Product" to="sv2#area5#page24#dau8" automaticCoupling="true"/>
+      <KOLink id="sv2#area5#cru9#kln27" name="Create Failed" to="sv2#area5#page25" gr:bendpoints="-44,-32,137,-23"/>
+    </CreateUnit>
+    <CreateUnit id="sv2#area5#cru1" name="Create category" entity="ent6" gr:x="410" gr:y="30">
+      <KOLink id="sv2#area5#cru1#kln4" name="KO-Link 4" to="sv2#area5#page8" gr:bendpoints="71,-39,-155,-52"/>
+      <OKLink id="sv2#area5#cru1#oln5" name="OK-Link 5" to="sv2#area5#page8" gr:bendpoints="31,37,-178,80"/>
+    </CreateUnit>
+    <DeleteUnit id="sv2#area5#dlu7" name="Delete image" entity="ent3" gr:x="65" gr:y="170">
+      <Selector id="sv2#area5#dlu7#dlu7sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#dlu7#dlu7sel#dlu7key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area5#dlu7#ln89" name="Image Deleted" to="sv2#area5#page23"/>
+      <KOLink id="sv2#area5#dlu7#kln23" name="Delete Failed" to="sv2#area5#page23" gr:bendpoints="66,69,-17,-143"/>
+      <Link id="sv2#area5#dlu7#ln23" name="Link 23" to="sv2#area5#page23#dau7" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#dlu7#ln23#par12" name="Current Object_PASSING_2_Input Object" target="sv2#area5#page23#dau7#dau7sel#dau7key.ent1#att24" blank="false" sourceLinkParameter="sv2#area5#page23#dau7#ln21#par7"/>
+      </Link>
+    </DeleteUnit>
+    <DeleteUnit id="sv2#area5#dlu1" name="Delete Category" entity="ent6" gr:x="860" gr:y="25">
+      <Selector id="sv2#area5#dlu1#dlu1sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#dlu1#dlu1sel#dlu1key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area5#dlu1#oln4" name="OK-Link 4" to="sv2#area5#page8" gr:bendpoints="-65,-43,137,-67"/>
+      <KOLink id="sv2#area5#dlu1#kln3" name="KO-Link 3" to="sv2#area5#page8" gr:bendpoints="-44,63,158,39"/>
+    </DeleteUnit>
+    <ModifyUnit id="sv2#area5#mfu5" name="Modify product" entity="ent1" gr:x="315" gr:y="650">
+      <Selector id="sv2#area5#mfu5#mfu5sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#mfu5#mfu5sel#mfu5key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area5#mfu5#ln80" name="Product Modified" to="sv2#area5#page21#dau11" automaticCoupling="true" gr:bendpoints="108,25,-110,35"/>
+      <KOLink id="sv2#area5#mfu5#kln21" name="modify Failed" to="sv2#area5#page21" gr:bendpoints="37,-32,-235,-53"/>
+    </ModifyUnit>
+    <ModifyUnit id="sv2#area5#mfu6" name="Modify record" entity="ent2" gr:x="655" gr:y="910">
+      <Selector id="sv2#area5#mfu6#mfu6sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#mfu6#mfu6sel#mfu6key" predicate="in"/>
+      </Selector>
+      <KOLink id="sv2#area5#mfu6#kln25" name="Modify Failed" to="sv2#area5#page21" gr:bendpoints="95,-37,176,225"/>
+      <OKLink id="sv2#area5#mfu6#oln3" name="OK-Link 3" to="sv2#area5#page21" gr:bendpoints="-157,-16,-76,246"/>
+      <Link id="sv2#area5#mfu6#ln15" name="Link 15" to="sv2#area5#page21#dau11" type="transport" validate="true" gr:bendpoints="-123,-122,7,160">
+        <LinkParameter id="sv2#area5#mfu6#ln15#par1" name="Current Object_PASSING_2_Input Object" target="sv2#area5#page21#dau11#dau11sel#dau11key.ent1#att24" blank="false" sourceLinkParameter="sv2#area5#page21#dau11#ln12#par10"/>
+      </Link>
+    </ModifyUnit>
+    <ModuleInstanceUnit gr:x="575" gr:y="180" id="sv2#area5#miu1" name="Delete products" moduleId="mov1#opm1">
+      <OKLink id="sv2#area5#miu1#oln8" to="sv2#area5#page25" name="OK-Link 10" automaticCoupling="true"/>
+      <KOLink id="sv2#area5#miu1#kln6" to="sv2#area5#page25" name="KO-Link 8" gr:bendpoints="45,78,58,-110" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+    <ModuleInstanceUnit gr:x="275" gr:y="170" id="sv2#area5#miu2" name="Add product image" moduleId="mov1#opm2">
+      <OKLink id="sv2#area5#miu2#oln20" to="sv2#area5#page23#dau7" name="Connected Image" gr:bendpoints="-68,61,18,-129">
+        <LinkParameter id="sv2#area5#miu2#oln20#par56" target="sv2#area5#page23#dau7#dau7sel#dau7key.ent1#att24" source="mov1#opm2#okcu2#ocp1" name="Target OID [Product]_dau7key [OID]"/>
+      </OKLink>
+      <KOLink id="sv2#area5#miu2#kln36" to="sv2#area5#page23" name="Connect Failed" automaticCoupling="true"/>
+    </ModuleInstanceUnit>
+  </OperationUnits>
+</Area>

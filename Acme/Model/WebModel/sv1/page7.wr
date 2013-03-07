@@ -1,0 +1,33 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page7" name="Stores" gr:x="775" gr:y="195" landmark="true">
+  <ContentUnits>
+    <DataUnit id="sv1#page7#dau5" name="Store details" entity="ent5" gr:x="95" gr:y="0" displayAttributes="ent5#att13 ent5#att14 ent5#att16 ent5#att15">
+      <Selector id="sv1#page7#dau5#dau5sel" booleanOperator="and">
+        <KeyCondition id="sv1#page7#dau5#dau5sel#dau5key" predicate="in"/>
+      </Selector>
+    </DataUnit>
+    <PowerIndexUnit id="sv1#page7#pwu2" entity="ent5" displayAttributes="ent5#att13 " sortable="true" checkable="false" useCountQuery="false" name="All stores" gr:x="0" gr:y="5" linkOrder="sv1#page7#pwu2#ln35">
+      <SortAttribute attribute="ent5#att13" order="ascending"/>
+      <Link id="sv1#page7#pwu2#ln35" name="Select" to="sv1#page7#dau5" type="automatic" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent5#att13" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#page7#pwu2">
+          <layout:Attribute attribute="ent5#att13"/>
+          <layout:Link link="sv1#page7#pwu2#ln35"/>
+          <layout:Link link="sv1#page7#pwu2ent5#att13"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#page7#dau5">
+          <layout:Attribute attribute="ent5#att13"/>
+          <layout:Attribute attribute="ent5#att14"/>
+          <layout:Attribute attribute="ent5#att16"/>
+          <layout:Attribute attribute="ent5#att15"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

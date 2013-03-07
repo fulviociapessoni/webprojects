@@ -1,0 +1,61 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area5#page23" name="Images" gr:x="0" gr:y="315">
+  <ContentUnits>
+    <DataUnit id="sv2#area5#page23#dau7" name="Product details" entity="ent1" gr:x="170" gr:y="0" displayAttributes="ent1#att10 ent1#att8 ent1#att11">
+      <Selector id="sv2#area5#page23#dau7#dau7sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page23#dau7#dau7sel#dau7key" predicate="in" name="ProductOid"/>
+      </Selector>
+      <Link id="sv2#area5#page23#dau7#ln91" name="Show Existing Images" to="sv2#area5#page23#pwu10" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area5#page23#dau7#ln94" name="Connect Image" to="sv2#area5#miu2" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page23#dau7#ln94#par101" name="OID_ProductOid" source="data.ent1#att24" target="sv2#area5#miu2.mov1#opm2#icu2#icp5"/>
+      </Link>
+      <Link id="sv2#area5#page23#dau7#ln21" name="Link 21" to="sv2#area5#dlu7" type="transport" validate="true" gr:bendpoints="-2,-136,110,55">
+        <LinkParameter id="sv2#area5#page23#dau7#ln21#par7" name="Current Object_PASSING" passing="true" source="data.ent1#att24" blank="false"/>
+      </Link>
+    </DataUnit>
+    <EntryUnit id="sv2#area5#page23#enu13" name="New image" gr:x="280" gr:y="10" linkOrder="sv2#area5#page23#enu13#ln79">
+      <Field id="sv2#area5#page23#enu13#fld49" name="description" modifiable="true" hidden="false" type="text"/>
+      <Field id="sv2#area5#page23#enu13#fld50" name="image" modifiable="true" hidden="false" type="blob"/>
+      <Link id="sv2#area5#page23#enu13#ln79" name="Create" to="sv2#area5#miu2" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page23#enu13#ln79#par99" name="description_Description" source="sv2#area5#page23#enu13#fld49" target="sv2#area5#miu2.mov1#opm2#icu2#icp4"/>
+        <LinkParameter id="sv2#area5#page23#enu13#ln79#par100" name="image_Image" source="sv2#area5#page23#enu13#fld50" target="sv2#area5#miu2.mov1#opm2#icu2#icp6"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit id="sv2#area5#page23#pwu10" entity="ent3" displayAttributes="ent3#att1 ent3#att2 " sortable="true" checkable="false" useCountQuery="false" name="Existing images" gr:x="0" gr:y="0" linkOrder="sv2#area5#page23#pwu10#ln54">
+      <SortAttribute attribute="ent3#att26" order="ascending"/>
+      <Selector id="sv2#area5#page23#pwu10#su9" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area5#page23#pwu10#su9#rcond3" role="rel11#rel6" predicate="in" implied="false" name="Images of product" type="required"/>
+      </Selector>
+      <Link id="sv2#area5#page23#pwu10#ln54" name="Delete Image" to="sv2#area5#dlu7" type="normal" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent3#att2" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page23#dau7">
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att11"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page23#enu13">
+          <layout:Field field="sv2#area5#page23#enu13#fld49"/>
+          <layout:Field field="sv2#area5#page23#enu13#fld50"/>
+          <layout:Link link="sv2#area5#page23#enu13#ln79"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page23#pwu10">
+          <layout:Attribute attribute="ent3#att1"/>
+          <layout:Attribute attribute="ent3#att2"/>
+          <layout:Link link="sv2#area5#page23#pwu10#ln54"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

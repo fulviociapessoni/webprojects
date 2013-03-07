@@ -1,0 +1,51 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page1" name="Home" gr:x="235" gr:y="190" landmark="true">
+  <ContentUnits>
+    <EntryUnit id="sv1#page1#enu2" name="Please Login (use manager/manager)" gr:x="265" gr:y="0" linkOrder="sv1#page1#enu2#ln17">
+      <Field id="sv1#page1#enu2#fld3" name="username" modifiable="true" hidden="false" type="string"/>
+      <Field id="sv1#page1#enu2#fld4" name="password" modifiable="true" hidden="false" type="password"/>
+      <Link id="sv1#page1#enu2#ln17" name="Enter" to="sv1#lgu2" type="normal" validate="true">
+        <LinkParameter id="sv1#page1#enu2#ln17#par19" name="username_2_Username" source="sv1#page1#enu2#fld3" target="sv1#lgu2.username" blank="false"/>
+        <LinkParameter id="sv1#page1#enu2#ln17#par49" name="password_2_Password" source="sv1#page1#enu2#fld4" target="sv1#lgu2.password" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <DataUnit id="sv1#page1#dau15" name="Offer of the day" entity="ent4" gr:x="130" gr:y="5" displayAttributes="ent4#att5 ent4#att7 ent4#att6">
+      <Selector booleanOperator="and" defaultPolicy="fill" id="sv1#page1#dau15#dau15sel">
+        <AttributesCondition id="sv1#page1#dau15#dau15sel#cond3" attributes="ent4#att22" name="highlight" implied="false" value="true" booleanOperator="or" predicate="eq"/>
+      </Selector>
+      <Link id="sv1#page1#dau15#ln29" name="See details" to="sv1#area2#page13#dau12" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <DataUnit id="sv1#page1#dau16" name="Product of the day" entity="ent1" gr:x="0" gr:y="5" displayAttributes="ent1#att10 ent1#att11 ent1#att12">
+      <Selector booleanOperator="and" defaultPolicy="fill" id="sv1#page1#dau16#dau16sel">
+        <AttributesCondition id="sv1#page1#dau16#dau16sel#cond4" attributes="ent1#att23" name="highlight" implied="false" value="true" booleanOperator="or" predicate="eq"/>
+      </Selector>
+      <Link id="sv1#page1#dau16#ln30" name="See details" to="sv1#area1#page2#dau1" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#page1#dau15">
+          <layout:Attribute attribute="ent4#att5"/>
+          <layout:Attribute attribute="ent4#att7"/>
+          <layout:Attribute attribute="ent4#att6"/>
+          <layout:Link link="sv1#page1#dau15#ln29"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#page1#dau16">
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Link link="sv1#page1#dau16#ln30"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+  <layout:CustomLocation name="Right Location">
+    <layout:Unit unitId="sv1#page1#enu2">
+      <layout:Field field="sv1#page1#enu2#fld3"/>
+      <layout:Field field="sv1#page1#enu2#fld4"/>
+      <layout:Link link="sv1#page1#enu2#ln17"/>
+    </layout:Unit>
+  </layout:CustomLocation>
+</Page>

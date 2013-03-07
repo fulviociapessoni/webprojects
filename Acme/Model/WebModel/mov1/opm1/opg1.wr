@@ -1,0 +1,25 @@
+<OperationGroup xmlns:gr="http://www.webratio.com/2006/WebML/Graph" gr:x="116" gr:y="0" id="mov1#opm1#opg1" name="Database Transaction" transaction="true">
+  <OperationUnits>
+    <DeleteUnit id="mov1#opm1#opg1#dlu11" gr:x="218" gr:y="0" name="Delete Images" entity="ent3">
+      <OKLink id="mov1#opm1#opg1#dlu11#oln15" name="Delete Products" to="mov1#opm1#opg1#dlu12"/>
+      <Selector id="mov1#opm1#opg1#dlu11#su6" booleanOperator="and" defaultPolicy="fill">
+        <RelationshipRoleCondition id="mov1#opm1#opg1#dlu11#su6#rcond4" role="rel11#rel6" name="ImagesOfProduct" implied="false" type="required" predicate="in"/>
+      </Selector>
+      <KOLink id="mov1#opm1#opg1#dlu11#kln33" name="Delete BigImage Failed" to="mov1#opm1#kocu1"/>
+    </DeleteUnit>
+    <DeleteUnit id="mov1#opm1#opg1#dlu12" gr:x="397" gr:y="73" name="Delete products" entity="ent1">
+      <Selector id="mov1#opm1#opg1#dlu12#su7" booleanOperator="and">
+        <KeyCondition id="mov1#opm1#opg1#dlu12#su7#kcond3" predicate="in" name="ProductOids"/>
+      </Selector>
+      <OKLink id="mov1#opm1#opg1#dlu12#oln16" name="Delete Succeded" to="mov1#opm1#okcu1" automaticCoupling="true"/>
+      <KOLink id="mov1#opm1#opg1#dlu12#kln34" name="Delete Product Failed" to="mov1#opm1#kocu1"/>
+    </DeleteUnit>
+    <DeleteUnit id="mov1#opm1#opg1#dlu13" gr:x="0" gr:y="19" name="Delete tech record" entity="ent2">
+      <Selector id="mov1#opm1#opg1#dlu13#su8" booleanOperator="and" defaultPolicy="fill">
+        <RelationshipRoleCondition id="mov1#opm1#opg1#dlu13#su8#rcond5" role="rel10#rel4" name="recordOfproduct" implied="false" type="required" predicate="in"/>
+      </Selector>
+      <OKLink id="mov1#opm1#opg1#dlu13#oln17" name="Delete BigImages" to="mov1#opm1#opg1#dlu11"/>
+      <KOLink id="mov1#opm1#opg1#dlu13#kln8" name="Delete TechRecord Failed" to="mov1#opm1#kocu1"/>
+    </DeleteUnit>
+  </OperationUnits>
+</OperationGroup>

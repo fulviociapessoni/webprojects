@@ -1,0 +1,42 @@
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv2#area3" name="Combination editing" gr:x="658" gr:y="123" landmark="true" defaultPage="sv2#area3#page16">
+  <OperationUnits>
+    <ConnectUnit id="sv2#area3#cnu2" name="Connect product" gr:x="293" gr:y="599" relationship="rel9#rel1">
+      <SourceSelector booleanOperator="and" id="sv2#area3#cnu2#cnu2ssel">
+        <KeyCondition id="sv2#area3#cnu2#cnu2ssel#cnu2SourceKey" predicate="in"/>
+      </SourceSelector>
+      <TargetSelector booleanOperator="and" id="sv2#area3#cnu2#cnu2tsel">
+        <KeyCondition id="sv2#area3#cnu2#cnu2tsel#cnu2TargetKey" predicate="in"/>
+      </TargetSelector>
+      <KOLink id="sv2#area3#cnu2#kln16" name="Connect Failed" to="sv2#area3#page3" gr:bendpoints="-74,-46,-136,153"/>
+      <OKLink id="sv2#area3#cnu2#oln1" name="OK-Link 1" to="sv2#area3#page3#dau3" automaticCoupling="true" gr:bendpoints="12,-90,95,128"/>
+    </ConnectUnit>
+    <CreateUnit id="sv2#area3#cru5" name="Create combination" entity="ent4" gr:x="466" gr:y="154">
+      <OKLink id="sv2#area3#cru5#ln63" name="To the Combination Details" to="sv2#area3#page3#dau3" automaticCoupling="true"/>
+      <KOLink id="sv2#area3#cru5#kln14" name="Create Failed" to="sv2#area3#page16" gr:bendpoints="-91,-63,215,-95"/>
+    </CreateUnit>
+    <DeleteUnit id="sv2#area3#dlu4" name="Delete combination" entity="ent4" gr:x="200" gr:y="0">
+      <Selector id="sv2#area3#dlu4#dlu4sel" booleanOperator="and">
+        <KeyCondition id="sv2#area3#dlu4#dlu4sel#dlu4key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area3#dlu4#ln52" name="Deleted Combination" to="sv2#area3#page16" gr:bendpoints="28,56,18,-105"/>
+      <KOLink id="sv2#area3#dlu4#kln10" name="Delete Failed" to="sv2#area3#page16" gr:bendpoints="86,25,84,-111"/>
+    </DeleteUnit>
+    <DisconnectUnit id="sv2#area3#dcu1" name="Disconnect product" gr:x="462" gr:y="600" relationship="rel9#rel1">
+      <SourceSelector booleanOperator="and" id="sv2#area3#dcu1#dcu1ssel">
+        <KeyCondition id="sv2#area3#dcu1#dcu1ssel#dcu1SourceKey" predicate="in"/>
+      </SourceSelector>
+      <TargetSelector booleanOperator="and" id="sv2#area3#dcu1#dcu1tsel">
+        <KeyCondition id="sv2#area3#dcu1#dcu1tsel#dcu1TargetKey" predicate="in"/>
+      </TargetSelector>
+      <KOLink id="sv2#area3#dcu1#kln17" name="Disconnect Failed" to="sv2#area3#page3" gr:bendpoints="86,-45,190,148"/>
+      <OKLink id="sv2#area3#dcu1#oln2" name="OK-Link 2" to="sv2#area3#page3#dau3" automaticCoupling="true" gr:bendpoints="-96,-111,188,112"/>
+    </DisconnectUnit>
+    <ModifyUnit id="sv2#area3#mfu3" name="Modify combination" entity="ent4" gr:x="0" gr:y="350">
+      <Selector id="sv2#area3#mfu3#mfu3sel" booleanOperator="and">
+        <KeyCondition id="sv2#area3#mfu3#mfu3sel#mfu3key" predicate="in"/>
+      </Selector>
+      <OKLink id="sv2#area3#mfu3#ln1" name="Combination Modified" to="sv2#area3#page3#dau3" automaticCoupling="true" gr:bendpoints="62,-39,-146,-6"/>
+      <KOLink id="sv2#area3#mfu3#kln15" name="Modify Failed" to="sv2#area3#page3" gr:bendpoints="61,-92,-288,-139"/>
+    </ModifyUnit>
+  </OperationUnits>
+</Area>

@@ -1,0 +1,57 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area5#page25" name="Products" gr:x="495" gr:y="325">
+  <ContentUnits>
+    <EntryUnit id="sv2#area5#page25#enu10" name="New product" gr:x="140" gr:y="10" linkOrder="sv2#area5#page25#enu10#ln86">
+      <Field id="sv2#area5#page25#enu10#fld37" name="code" modifiable="true" hidden="false" type="integer"/>
+      <Field id="sv2#area5#page25#enu10#fld38" name="name" modifiable="true" hidden="false" type="string"/>
+      <Field id="sv2#area5#page25#enu10#fld39" name="description" modifiable="true" hidden="false" type="text"/>
+      <Field id="sv2#area5#page25#enu10#fld40" name="price" modifiable="true" hidden="false" type="float"/>
+      <Field id="sv2#area5#page25#enu10#fld41" name="image" modifiable="true" hidden="false" type="blob"/>
+      <Field id="sv2#area5#page25#enu10#fld12" name="highlighted" preloaded="true" modifiable="true" hidden="false" type="boolean">
+        <Slot id="sv2#area5#page25#enu10#fld12#slot6" name="highlight slot" value="false" output="true" label="true"/>
+      </Field>
+      <Link id="sv2#area5#page25#enu10#ln86" name="Create" to="sv2#area5#cru9" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par73" name="code_2_code" source="sv2#area5#page25#enu10#fld37" target="sv2#area5#cru9.ent1#att8" blank="false"/>
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par74" name="description_2_description" source="sv2#area5#page25#enu10#fld39" target="sv2#area5#cru9.ent1#att9" blank="false"/>
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par75" name="name_2_name" source="sv2#area5#page25#enu10#fld38" target="sv2#area5#cru9.ent1#att10" blank="false"/>
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par76" name="price_2_price" source="sv2#area5#page25#enu10#fld40" target="sv2#area5#cru9.ent1#att11" blank="false"/>
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par77" name="image_2_thumbnail" source="sv2#area5#page25#enu10#fld41" target="sv2#area5#cru9.ent1#att12" blank="false"/>
+        <LinkParameter id="sv2#area5#page25#enu10#ln86#par78" name="highlighted_2_highlighted" source="sv2#area5#page25#enu10#fld12" target="sv2#area5#cru9.ent1#att23" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit id="sv2#area5#page25#pwu11" entity="ent1" displayAttributes="ent1#att8 ent1#att10 " sortable="true" checkable="true" useCountQuery="false" name="All Products" gr:x="0" gr:y="0" linkOrder="sv2#area5#page25#pwu11#ln56 sv2#area5#page25#pwu11#ln55">
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <Link id="sv2#area5#page25#pwu11#ln55" name="Modify" to="sv2#area5#page21#dau11" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page25#pwu11#ln55#par34" name="Selected Object_2_Input Object" source="data[].ent1#att24" target="sv2#area5#page21#dau11#dau11sel#dau11key.ent1#att24" blank="false"/>
+      </Link>
+      <Link id="sv2#area5#page25#pwu11#ln56" name="Delete" to="sv2#area5#miu1" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page25#pwu11#ln56#par35" name="Checked OID_ProductOids" source="ent1#att24Checked" target="sv2#area5#miu1.mov1#opm1#icu1#icp3"/>
+      </Link>
+      <DefaultSortAttribute attribute="ent1#att8" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att10" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page25#pwu11">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv2#area5#page25#pwu11#ln56"/>
+          <layout:Link link="sv2#area5#page25#pwu11#ln55"/>
+          <layout:Link link="sv2#area5#page25#pwu11ent1#att10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page25#enu10">
+          <layout:Field field="sv2#area5#page25#enu10#fld37"/>
+          <layout:Field field="sv2#area5#page25#enu10#fld38"/>
+          <layout:Field field="sv2#area5#page25#enu10#fld39"/>
+          <layout:Field field="sv2#area5#page25#enu10#fld40"/>
+          <layout:Field field="sv2#area5#page25#enu10#fld41"/>
+          <layout:Field field="sv2#area5#page25#enu10#fld12"/>
+          <layout:Link link="sv2#area5#page25#enu10#ln86"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

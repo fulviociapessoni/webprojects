@@ -1,0 +1,22 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#page26" name="Home" gr:x="325" gr:y="-30" landmark="true">
+  <ContentUnits>
+    <DataUnit id="sv2#page26#dau13" name="User" entity="User" gr:x="160" gr:y="0" displayAttributes="userName">
+      <Selector id="sv2#page26#dau13#dau13sel" booleanOperator="and">
+        <KeyCondition id="sv2#page26#dau13#dau13sel#dau13key" predicate="in"/>
+      </Selector>
+    </DataUnit>
+    <GetUnit id="sv2#page26#gtu1" name="Get User" gr:x="0" gr:y="5" contextParameters="UserCtxParam">
+      <Link id="sv2#page26#gtu1#ln18" name="Link 18" to="sv2#page26#dau13" type="transport" automaticCoupling="true" validate="true"/>
+    </GetUnit>
+  </ContentUnits>
+  <Link id="sv2#page26#ln16" name="Logout" to="sv2#lou2" type="normal" automaticCoupling="true" validate="true"/>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#page26#dau13">
+          <layout:Attribute attribute="userName"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

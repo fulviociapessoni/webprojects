@@ -1,0 +1,37 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area1#page5" name="Images Page" gr:x="410" gr:y="340">
+  <ContentUnits>
+    <DataUnit id="sv1#area1#page5#dau2" name="Product" entity="ent1" gr:x="0" gr:y="0" displayAttributes="ent1#att8 ent1#att10" linkOrder="sv1#area1#page5#dau2#ln11">
+      <Selector id="sv1#area1#page5#dau2#dau2sel" booleanOperator="and">
+        <KeyCondition id="sv1#area1#page5#dau2#dau2sel#dau2key" predicate="in"/>
+      </Selector>
+      <Link id="sv1#area1#page5#dau2#ln5" name="Link 5" to="sv1#area1#page5#pwu1" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv1#area1#page5#dau2#ln11" name="Back" to="sv1#area1#page2#dau1" type="normal" automaticCoupling="true" validate="true" gr:bendpoints="-78,-67,-25,224"/>
+    </DataUnit>
+    <PowerIndexUnit id="sv1#area1#page5#pwu1" entity="ent3" displayAttributes="ent3#att1 ent3#att2" sortable="true" checkable="false" useCountQuery="false" name="Enlarged images" gr:x="125" gr:y="0">
+      <SortAttribute attribute="ent3#att26" order="ascending"/>
+      <Selector id="sv1#area1#page5#pwu1#su1" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv1#area1#page5#pwu1#su1#rcond7" role="rel11#rel6" predicate="in" implied="false" name="Image of Product" type="required"/>
+      </Selector>
+      <DefaultSortAttribute attribute="ent3#att2" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area1#page5#dau2">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv1#area1#page5#dau2#ln11"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area1#page5#pwu1">
+          <layout:Attribute attribute="ent3#att1"/>
+          <layout:Attribute attribute="ent3#att2"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

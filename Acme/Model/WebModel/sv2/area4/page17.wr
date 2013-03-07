@@ -1,0 +1,59 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area4#page17" name="Modify store" gr:x="142" gr:y="274">
+  <ContentUnits>
+    <DataUnit id="sv2#area4#page17#dau4" name="Store details" entity="ent5" gr:x="0" gr:y="0" displayAttributes="ent5#att13 ent5#att14 ent5#att15 ent5#att16 ">
+      <Selector id="sv2#area4#page17#dau4#dau4sel" booleanOperator="and">
+        <KeyCondition id="sv2#area4#page17#dau4#dau4sel#dau4key" predicate="in"/>
+      </Selector>
+      <Link id="sv2#area4#page17#dau4#ln69" name="Modify Store " to="sv2#area4#page17#enu7" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page17#dau4#ln69#lnp2N3E4663_att13_dau4" name="Automatically Generated" source="data.ent5#att13" target="sv2#area4#page17#enu7#fld25#slotN3E4663_att13" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#dau4#ln69#lnp2N7F45DE_att15_dau4" name="Automatically Generated" source="data.ent5#att15" target="sv2#area4#page17#enu7#fld26#slotN7F45DE_att15" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#dau4#ln69#lnp2N4426A6_att14_dau4" name="Automatically Generated" source="data.ent5#att14" target="sv2#area4#page17#enu7#fld27#slotN4426A6_att14" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#dau4#ln69#lnp2N455CF0_att16_dau4" name="Automatically Generated" source="data.ent5#att16" target="sv2#area4#page17#enu7#fld28#slotN455CF0_att16" blank="false"/>
+      </Link>
+      <Link id="sv2#area4#page17#dau4#ln68_1" name="Transport OID" to="sv2#area4#mfu4" type="transport" validate="true">
+        <LinkParameter id="sv2#area4#page17#dau4#ln68_1#par4" name="Current Object_2_Modified Object" source="data.ent5#att28" target="sv2#area4#mfu4#mfu4sel#mfu4key.ent5#att28" blank="false"/>
+      </Link>
+    </DataUnit>
+    <EntryUnit id="sv2#area4#page17#enu7" name="Modify store" gr:x="0" gr:y="113">
+      <Field id="sv2#area4#page17#enu7#fld25" name="location" preloaded="true" modifiable="true" hidden="false" type="string">
+        <Slot id="sv2#area4#page17#enu7#fld25#slotN3E4663_att13" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area4#page17#enu7#fld26" name="map" preloaded="true" modifiable="true" hidden="false" type="blob">
+        <Slot id="sv2#area4#page17#enu7#fld26#slotN7F45DE_att15" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area4#page17#enu7#fld27" name="mail" preloaded="true" modifiable="true" hidden="false" type="url">
+        <Slot id="sv2#area4#page17#enu7#fld27#slotN4426A6_att14" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area4#page17#enu7#fld28" name="image" preloaded="true" modifiable="true" hidden="false" type="blob">
+        <Slot id="sv2#area4#page17#enu7#fld28#slotN455CF0_att16" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Link id="sv2#area4#page17#enu7#ln68" name="Modify" to="sv2#area4#mfu4" type="normal" validate="true">
+        <LinkParameter id="sv2#area4#page17#enu7#ln68#par29" name="location" source="sv2#area4#page17#enu7#fld25" target="sv2#area4#mfu4.ent5#att13" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#enu7#ln68#par30" name="email" source="sv2#area4#page17#enu7#fld27" target="sv2#area4#mfu4.ent5#att14" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#enu7#ln68#par31" name="map" source="sv2#area4#page17#enu7#fld26" target="sv2#area4#mfu4.ent5#att15" blank="false"/>
+        <LinkParameter id="sv2#area4#page17#enu7#ln68#par32" name="photo" source="sv2#area4#page17#enu7#fld28" target="sv2#area4#mfu4.ent5#att16" blank="false"/>
+      </Link>
+    </EntryUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area4#page17#dau4">
+          <layout:Attribute attribute="ent5#att13"/>
+          <layout:Attribute attribute="ent5#att14"/>
+          <layout:Attribute attribute="ent5#att15"/>
+          <layout:Attribute attribute="ent5#att16"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area4#page17#enu7">
+          <layout:Field field="sv2#area4#page17#enu7#fld25"/>
+          <layout:Field field="sv2#area4#page17#enu7#fld26"/>
+          <layout:Field field="sv2#area4#page17#enu7#fld27"/>
+          <layout:Field field="sv2#area4#page17#enu7#fld28"/>
+          <layout:Link link="sv2#area4#page17#enu7#ln68"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

@@ -1,0 +1,25 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area1#page4" name="By category" gr:x="130" gr:y="0" landmark="true">
+  <ContentUnits>
+    <HierarchicalIndexUnit id="sv1#area1#page4#hinu1" name="Categories" entity="ent6" gr:x="0" gr:y="4" displayAttributes="ent6#att19 ">
+      <SortAttribute attribute="ent6#att19" order="ascending"/>
+      <HierarchicalIndexLevel id="sv1#area1#page4#hinu1#hiulvl1" name="Products" entity="ent1" role="rel12#rel7" gr:x="0" gr:y="0" displayAttributes="ent1#att8 ent1#att10 ">
+        <SortAttribute attribute="ent1#att10" order="ascending"/>
+      </HierarchicalIndexLevel>
+      <Link id="sv1#area1#page4#hinu1#ln2" name="Details" to="sv1#area1#page2#dau1" type="normal" validate="true">
+        <LinkParameter id="sv1#area1#page4#hinu1#ln2#par18" name="Selected Object (level 2)_2_Input Object" source="data[].sv1#area1#page4#hinu1#hiulvl1data[].ent1#att24" target="sv1#area1#page2#dau1#dau1sel#dau1key.ent1#att24" blank="false"/>
+      </Link>
+    </HierarchicalIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area1#page4#hinu1" layout:unitLayout="WRDefault/Table">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv1#area1#page4#hinu1#ln2"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

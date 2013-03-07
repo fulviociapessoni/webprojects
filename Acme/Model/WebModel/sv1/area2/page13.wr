@@ -1,0 +1,53 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#area2#page13" name="Combination Page" gr:x="0" gr:y="295">
+  <ContentUnits>
+    <DataUnit id="sv1#area2#page13#dau10" name="Product summary" entity="ent1" gr:x="8" gr:y="234" displayAttributes="ent1#att10 ent1#att8 ent1#att11 ent1#att9 ent1#att12">
+      <Selector id="sv1#area2#page13#dau10#dau10sel" booleanOperator="and">
+        <KeyCondition id="sv1#area2#page13#dau10#dau10sel#dau10key" predicate="in"/>
+      </Selector>
+      <Link id="sv1#area2#page13#dau10#ln43" name="See details" to="sv1#area1#page2#dau1" type="normal" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <DataUnit id="sv1#area2#page13#dau12" name="Combination details" entity="ent4" gr:x="1" gr:y="0" displayAttributes="ent4#att3 ent4#att5 ent4#att6 ent4#att4 ent4#att7">
+      <Selector id="sv1#area2#page13#dau12#dau12sel" booleanOperator="and">
+        <KeyCondition id="sv1#area2#page13#dau12#dau12sel#dau12key" predicate="in"/>
+      </Selector>
+      <Link id="sv1#area2#page13#dau12#ln14" name="Show Product Summary" to="sv1#area2#page13#scu1" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <ScrollerUnit id="sv1#area2#page13#scu1" name="More products.." entity="ent1" gr:x="0" gr:y="119" blockFactor="1">
+      <Selector booleanOperator="and" defaultPolicy="fill" id="sv1#area2#page13#scu1#scu1sel">
+        <RelationshipRoleCondition id="sv1#area2#page13#scu1#scu1sel#sel8" role="rel9#rel2" name="Product of combination" implied="false" type="required" predicate="in"/>
+      </Selector>
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <Link id="sv1#area2#page13#scu1#ln28" name="To Product Summary" to="sv1#area2#page13#dau10" type="automatic" automaticCoupling="true" validate="true"/>
+    </ScrollerUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv1#area2#page13#dau12">
+          <layout:Attribute attribute="ent4#att3"/>
+          <layout:Attribute attribute="ent4#att5"/>
+          <layout:Attribute attribute="ent4#att6"/>
+          <layout:Attribute attribute="ent4#att4"/>
+          <layout:Attribute attribute="ent4#att7"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell label="More products" layout:cellLayout="Print Frame">
+        <layout:Unit unitId="sv1#area2#page13#scu1" label="More products" layout:frameLayout="None">
+          <layout:Link link="sv1#area2#page13#scu1First"/>
+          <layout:Link link="sv1#area2#page13#scu1Previous"/>
+          <layout:Link link="sv1#area2#page13#scu1Block"/>
+          <layout:Link link="sv1#area2#page13#scu1Next"/>
+          <layout:Link link="sv1#area2#page13#scu1Last"/>
+        </layout:Unit>
+        <layout:Unit unitId="sv1#area2#page13#dau10" label="Product summary" layout:frameLayout="None">
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Link link="sv1#area2#page13#dau10#ln43"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

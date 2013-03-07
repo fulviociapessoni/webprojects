@@ -1,0 +1,145 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area5#page21" name="Modify product" gr:x="460" gr:y="480">
+  <ContentUnits>
+    <DataUnit id="sv2#area5#page21#dau9" name="Technical record" entity="ent2" gr:x="188" gr:y="201" displayAttributes="ent2#att17 ent2#att18">
+      <Selector booleanOperator="and" defaultPolicy="fill" id="sv2#area5#page21#dau9#dau9sel">
+        <RelationshipRoleCondition id="sv2#area5#page21#dau9#dau9sel#sel7" role="rel10#rel4" name="Record of product" implied="false" type="required" predicate="in"/>
+      </Selector>
+      <Link id="sv2#area5#page21#dau9#ln81" name="Modify Record" to="sv2#area5#page21#enu12" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page21#dau9#ln81#lnp2N443800_att17_dau9" name="Automatically Generated" source="data.ent2#att17" target="sv2#area5#page21#enu12#fld47#slotN443800_att17" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau9#ln81#lnp2N38B3BB_att18_dau9" name="Automatically Generated" source="data.ent2#att18" target="sv2#area5#page21#enu12#fld48#slotN38B3BB_att18" blank="false"/>
+      </Link>
+      <Link id="sv2#area5#page21#dau9#ln83_1" name="Transport OID" to="sv2#area5#mfu6" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page21#dau9#ln83_1#par5" name="Current Object_2_Modified Object" source="data.ent2#att25" target="sv2#area5#mfu6#mfu6sel#mfu6key.ent2#att25" blank="false"/>
+      </Link>
+    </DataUnit>
+    <DataUnit id="sv2#area5#page21#dau11" name="Product details" entity="ent1" gr:x="89" gr:y="108" displayAttributes="ent1#att10 ent1#att8 ent1#att11 ent1#att9 ent1#att12">
+      <Selector id="sv2#area5#page21#dau11#dau11sel" booleanOperator="and">
+        <KeyCondition id="sv2#area5#page21#dau11#dau11sel#dau11key" predicate="in"/>
+      </Selector>
+      <Link id="sv2#area5#page21#dau11#ln77" name="Modify Product" to="sv2#area5#page21#enu11" type="transport" validate="true">
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par79" name="code_2_code" source="data.ent1#att8" target="sv2#area5#page21#enu11#fld42#slotN1FF451_att8" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par80" name="name_2_name" source="data.ent1#att10" target="sv2#area5#page21#enu11#fld43#slotN60FCAC_att10" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par81" name="description_2_description" source="data.ent1#att9" target="sv2#area5#page21#enu11#fld44#slotN6CB3F1_att9" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par82" name="price_2_price" source="data.ent1#att11" target="sv2#area5#page21#enu11#fld45#slotN19CC1B_att11" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par83" name="thumbnail_2_image" source="data.ent1#att12" target="sv2#area5#page21#enu11#fld46#slotN273D30_att12" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#dau11#ln77#par84" name="highlighted_2_highlighted" source="data.ent1#att23" target="sv2#area5#page21#enu11#fld13#slot5" blank="false"/>
+      </Link>
+      <Link id="sv2#area5#page21#dau11#ln92" name="Edit images" to="sv2#area5#page23#dau7" type="normal" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area5#page21#dau11#ln95" name="To the Technical Record" to="sv2#area5#page21#dau9" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area5#page21#dau11#ln78_1" name="Transport OID" to="sv2#area5#mfu5" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area5#page21#dau11#ln12" name="Link 12" to="sv2#area5#mfu6" type="transport" validate="true" gr:bendpoints="32,157,-98,-125">
+        <LinkParameter id="sv2#area5#page21#dau11#ln12#par10" name="Current Object_PASSING" passing="true" source="data.ent1#att24" blank="false"/>
+      </Link>
+      <Link id="sv2#area5#page21#dau11#ln25" name="Link 25" to="sv2#area5#cnu1" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area5#page21#dau11#ln27" name="Link 27" to="sv2#area5#page21#dau14" type="transport" automaticCoupling="true" validate="true"/>
+    </DataUnit>
+    <DataUnit id="sv2#area5#page21#dau14" name="Current Category" entity="ent6" gr:x="10" gr:y="0" displayAttributes="ent6#att19">
+      <Selector booleanOperator="and" defaultPolicy="fill" id="sv2#area5#page21#dau14#dau14sel">
+        <RelationshipRoleCondition id="sv2#area5#page21#dau14#dau14sel#cond1" role="rel12#rel8" name="Condition1" implied="false" type="required" predicate="in"/>
+      </Selector>
+    </DataUnit>
+    <EntryUnit id="sv2#area5#page21#enu11" name="Modify product" gr:x="0" gr:y="265">
+      <Field id="sv2#area5#page21#enu11#fld42" name="code" preloaded="true" modifiable="true" hidden="false" type="integer">
+        <Slot id="sv2#area5#page21#enu11#fld42#slotN1FF451_att8" name="code slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu11#fld43" name="name" preloaded="true" modifiable="true" hidden="false" type="string">
+        <Slot id="sv2#area5#page21#enu11#fld43#slotN60FCAC_att10" name="name slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu11#fld44" name="description" preloaded="true" modifiable="true" hidden="false" type="text">
+        <Slot id="sv2#area5#page21#enu11#fld44#slotN6CB3F1_att9" name="description slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu11#fld45" name="price" preloaded="true" modifiable="true" hidden="false" type="float">
+        <Slot id="sv2#area5#page21#enu11#fld45#slotN19CC1B_att11" name="price slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu11#fld46" name="image" preloaded="true" modifiable="true" hidden="false" type="blob">
+        <Slot id="sv2#area5#page21#enu11#fld46#slotN273D30_att12" name="image slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu11#fld13" name="highlighted" preloaded="true" modifiable="true" hidden="false" type="boolean">
+        <Slot id="sv2#area5#page21#enu11#fld13#slot5" name="highlight slot" output="true" label="true"/>
+      </Field>
+      <Link id="sv2#area5#page21#enu11#ln78" name="Modify" to="sv2#area5#mfu5" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par85" name="code_2_code" source="sv2#area5#page21#enu11#fld42" target="sv2#area5#mfu5.ent1#att8" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par86" name="description_2_description" source="sv2#area5#page21#enu11#fld44" target="sv2#area5#mfu5.ent1#att9" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par87" name="name_2_name" source="sv2#area5#page21#enu11#fld43" target="sv2#area5#mfu5.ent1#att10" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par88" name="price_2_price" source="sv2#area5#page21#enu11#fld45" target="sv2#area5#mfu5.ent1#att11" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par89" name="image_2_thumbnail" source="sv2#area5#page21#enu11#fld46" target="sv2#area5#mfu5.ent1#att12" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu11#ln78#par90" name="highlighted_2_highlighted" source="sv2#area5#page21#enu11#fld13" target="sv2#area5#mfu5.ent1#att23" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <EntryUnit id="sv2#area5#page21#enu12" name="Modify record" gr:x="355" gr:y="255">
+      <Field id="sv2#area5#page21#enu12#fld47" name="colors" preloaded="true" modifiable="true" hidden="false" type="blob">
+        <Slot id="sv2#area5#page21#enu12#fld47#slotN443800_att17" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area5#page21#enu12#fld48" name="dimensions" preloaded="true" modifiable="true" hidden="false" type="string">
+        <Slot id="sv2#area5#page21#enu12#fld48#slotN38B3BB_att18" name="Automatically Generated" output="true" label="true"/>
+      </Field>
+      <Link id="sv2#area5#page21#enu12#ln83" name="Modify" to="sv2#area5#mfu6" type="normal" validate="true">
+        <LinkParameter id="sv2#area5#page21#enu12#ln83#par40" name="colors" source="sv2#area5#page21#enu12#fld47" target="sv2#area5#mfu6.ent2#att17" blank="false"/>
+        <LinkParameter id="sv2#area5#page21#enu12#ln83#par41" name="dimensions" source="sv2#area5#page21#enu12#fld48" target="sv2#area5#mfu6.ent2#att18" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit id="sv2#area5#page21#pwu12" entity="ent6" displayAttributes="ent6#att19 " sortable="true" checkable="false" useCountQuery="false" name="Categories" gr:x="231" gr:y="0" linkOrder="sv2#area5#page21#pwu12#ln57">
+      <SortAttribute attribute="ent6#att19" order="ascending"/>
+      <Link id="sv2#area5#page21#pwu12#ln57" name="Choose category" to="sv2#area5#cnu1" type="normal" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent6#att19" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#dau14">
+          <layout:Attribute attribute="ent6#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#pwu12">
+          <layout:Attribute attribute="ent6#att19"/>
+          <layout:Link link="sv2#area5#page21#pwu12#ln57"/>
+          <layout:Link link="sv2#area5#page21#pwu12ent6#att19"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell/>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#dau11">
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att11"/>
+          <layout:Attribute attribute="ent1#att9"/>
+          <layout:Attribute attribute="ent1#att12"/>
+          <layout:Link link="sv2#area5#page21#dau11#ln92"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#enu11">
+          <layout:Field field="sv2#area5#page21#enu11#fld42"/>
+          <layout:Field field="sv2#area5#page21#enu11#fld43"/>
+          <layout:Field field="sv2#area5#page21#enu11#fld44"/>
+          <layout:Field field="sv2#area5#page21#enu11#fld45"/>
+          <layout:Field field="sv2#area5#page21#enu11#fld46"/>
+          <layout:Field field="sv2#area5#page21#enu11#fld13"/>
+          <layout:Link link="sv2#area5#page21#enu11#ln78"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#dau9">
+          <layout:Attribute attribute="ent2#att17"/>
+          <layout:Attribute attribute="ent2#att18"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area5#page21#enu12">
+          <layout:Field field="sv2#area5#page21#enu12#fld47"/>
+          <layout:Field field="sv2#area5#page21#enu12#fld48"/>
+          <layout:Link link="sv2#area5#page21#enu12#ln83"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>

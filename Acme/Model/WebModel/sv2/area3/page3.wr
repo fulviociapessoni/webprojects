@@ -1,0 +1,132 @@
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv2#area3#page3" name="Modify combination" gr:x="170" gr:y="305">
+  <ContentUnits>
+    <DataUnit id="sv2#area3#page3#dau3" name="Combination details" entity="ent4" gr:x="45" gr:y="15" displayAttributes="ent4#att3 ent4#att4 ent4#att5 ent4#att6 ent4#att7 ent4#att20 ent4#att21 ent4#att22 ">
+      <Selector id="sv2#area3#page3#dau3#dau3sel" booleanOperator="and">
+        <KeyCondition id="sv2#area3#page3#dau3#dau3sel#dau3key" predicate="in"/>
+      </Selector>
+      <Link id="sv2#area3#page3#dau3#ln8" name="Disconnect Product" to="sv2#area3#dcu1" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area3#page3#dau3#ln61" name="Modify Combination" to="sv2#area3#page3#enu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par21" name="name_2_name" source="data.ent4#att5" target="sv2#area3#page3#enu3#fld8#slotN67C1A6_att5" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par22" name="code_2_code" source="data.ent4#att3" target="sv2#area3#page3#enu3#fld9#slotN5A87DB_att3" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par23" name="description_2_description" source="data.ent4#att4" target="sv2#area3#page3#enu3#fld15#slotND6C07_att4" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par24" name="price_2_price" source="data.ent4#att6" target="sv2#area3#page3#enu3#fld16#slotN2F41A5_att6" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par61" name="photo_2_image" source="data.ent4#att7" target="sv2#area3#page3#enu3#fld17#slotN7EBE66_att7" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par62" name="start date_2_start date" source="data.ent4#att20" target="sv2#area3#page3#enu3#fld6#slot3" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par63" name="end date_2_end date" source="data.ent4#att21" target="sv2#area3#page3#enu3#fld7#slot2" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#dau3#ln61#par64" name="highlighted_2_highlighted" source="data.ent4#att22" target="sv2#area3#page3#enu3#fld10#slot4" blank="false"/>
+      </Link>
+      <Link id="sv2#area3#page3#dau3#ln64" name="Connect Product" to="sv2#area3#cnu2" type="transport" automaticCoupling="true" validate="true"/>
+      <Link id="sv2#area3#page3#dau3#ln62_1" name="Transport OID" to="sv2#area3#mfu3" type="transport" validate="true">
+        <LinkParameter id="sv2#area3#page3#dau3#ln62_1#par3" name="Current Object_2_Modified Object" source="data.ent4#att27" target="sv2#area3#mfu3#mfu3sel#mfu3key.ent4#att27" blank="false"/>
+      </Link>
+      <Link id="sv2#area3#page3#dau3#ln32" name="Link 32" to="sv2#area3#page3#pwu14" type="transport" automaticCoupling="true" validate="true" gr:bendpoints="174,54,-142,-30"/>
+      <Link id="sv2#area3#page3#dau3#ln4" name="Link4" to="sv2#area3#page3#pwu13" automaticCoupling="true" type="transport" validate="true"/>
+    </DataUnit>
+    <EntryUnit id="sv2#area3#page3#enu3" name="Modify combination" gr:x="0" gr:y="145" linkOrder="sv2#area3#page3#enu3#ln62">
+      <Field id="sv2#area3#page3#enu3#fld8" name="name" preloaded="true" modifiable="true" hidden="false" type="string">
+        <Slot id="sv2#area3#page3#enu3#fld8#slotN67C1A6_att5" name="name slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld9" name="code" preloaded="true" modifiable="true" hidden="false" type="integer">
+        <Slot id="sv2#area3#page3#enu3#fld9#slotN5A87DB_att3" name="code slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld15" name="description" preloaded="true" modifiable="true" hidden="false" type="text">
+        <Slot id="sv2#area3#page3#enu3#fld15#slotND6C07_att4" name="description slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld16" name="price" preloaded="true" modifiable="true" hidden="false" type="float">
+        <Slot id="sv2#area3#page3#enu3#fld16#slotN2F41A5_att6" name="price slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld17" name="image" preloaded="true" modifiable="true" hidden="false" type="blob">
+        <Slot id="sv2#area3#page3#enu3#fld17#slotN7EBE66_att7" name="image slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld6" name="start date" preloaded="true" modifiable="true" hidden="false" type="date">
+        <Slot id="sv2#area3#page3#enu3#fld6#slot3" name="start slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld7" name="end date" preloaded="true" modifiable="true" hidden="false" type="date">
+        <Slot id="sv2#area3#page3#enu3#fld7#slot2" name="end slot" output="true" label="true"/>
+      </Field>
+      <Field id="sv2#area3#page3#enu3#fld10" name="highlighted" preloaded="true" modifiable="true" hidden="false" type="boolean">
+        <Slot id="sv2#area3#page3#enu3#fld10#slot4" name="highlight slot" output="true" label="true"/>
+      </Field>
+      <Link id="sv2#area3#page3#enu3#ln62" name="Modify" to="sv2#area3#mfu3" type="normal" validate="true">
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par8" name="code_2_code" source="sv2#area3#page3#enu3#fld9" target="sv2#area3#mfu3.ent4#att3" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par9" name="description_2_description" source="sv2#area3#page3#enu3#fld15" target="sv2#area3#mfu3.ent4#att4" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par13" name="name_2_name" source="sv2#area3#page3#enu3#fld8" target="sv2#area3#mfu3.ent4#att5" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par14" name="price_2_price" source="sv2#area3#page3#enu3#fld16" target="sv2#area3#mfu3.ent4#att6" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par15" name="image_2_photo" source="sv2#area3#page3#enu3#fld17" target="sv2#area3#mfu3.ent4#att7" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par16" name="start date_2_start date" source="sv2#area3#page3#enu3#fld6" target="sv2#area3#mfu3.ent4#att20" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par17" name="end date_2_end date" source="sv2#area3#page3#enu3#fld7" target="sv2#area3#mfu3.ent4#att21" blank="false"/>
+        <LinkParameter id="sv2#area3#page3#enu3#ln62#par20" name="Highlighted_2_highlighted" source="sv2#area3#page3#enu3#fld10" target="sv2#area3#mfu3.ent4#att22" blank="false"/>
+      </Link>
+    </EntryUnit>
+    <PowerIndexUnit id="sv2#area3#page3#pwu13" entity="ent1" displayAttributes="ent1#att8 ent1#att10 " sortable="true" checkable="false" useCountQuery="false" name="Products to Include" gr:x="295" gr:y="0" linkOrder="sv2#area3#page3#pwu13#ln58" blockFactor="10">
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <Selector id="sv2#area3#page3#pwu13#su10" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area3#page3#pwu13#su10#rcond8" name="Not Included Products" predicate="notIn" implied="false" role="rel9#rel2"/>
+      </Selector>
+      <Link id="sv2#area3#page3#pwu13#ln58" name="Connect" to="sv2#area3#cnu2" type="normal" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent1#att8" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att10" order="ascending"/>
+    </PowerIndexUnit>
+    <PowerIndexUnit id="sv2#area3#page3#pwu14" entity="ent1" displayAttributes="ent1#att8 ent1#att10 " sortable="true" checkable="false" useCountQuery="false" name="Included products" gr:x="315" gr:y="130" linkOrder="sv2#area3#page3#pwu14#ln59">
+      <SortAttribute attribute="ent1#att10" order="ascending"/>
+      <Selector id="sv2#area3#page3#pwu14#su13" defaultPolicy="fill" booleanOperator="and">
+        <RelationshipRoleCondition id="sv2#area3#page3#pwu14#su13#rcond6" role="rel9#rel2" predicate="in" implied="false" name="Included" type="required"/>
+      </Selector>
+      <Link id="sv2#area3#page3#pwu14#ln59" name="Disconnect" to="sv2#area3#dcu1" type="normal" automaticCoupling="true" validate="true"/>
+      <DefaultSortAttribute attribute="ent1#att8" order="ascending"/>
+      <DefaultSortAttribute attribute="ent1#att10" order="ascending"/>
+    </PowerIndexUnit>
+  </ContentUnits>
+  <layout:Grid>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area3#page3#dau3">
+          <layout:Attribute attribute="ent4#att3"/>
+          <layout:Attribute attribute="ent4#att4"/>
+          <layout:Attribute attribute="ent4#att5"/>
+          <layout:Attribute attribute="ent4#att6"/>
+          <layout:Attribute attribute="ent4#att7"/>
+          <layout:Attribute attribute="ent4#att20"/>
+          <layout:Attribute attribute="ent4#att21"/>
+          <layout:Attribute attribute="ent4#att22"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area3#page3#enu3">
+          <layout:Field field="sv2#area3#page3#enu3#fld8"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld9"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld15"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld16"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld17"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld6"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld7"/>
+          <layout:Field field="sv2#area3#page3#enu3#fld10"/>
+          <layout:Link link="sv2#area3#page3#enu3#ln62"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+    <layout:Row>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area3#page3#pwu14">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv2#area3#page3#pwu14#ln59"/>
+          <layout:Link link="sv2#area3#page3#pwu14ent1#att10"/>
+        </layout:Unit>
+      </layout:Cell>
+      <layout:Cell>
+        <layout:Unit unitId="sv2#area3#page3#pwu13">
+          <layout:Attribute attribute="ent1#att8"/>
+          <layout:Attribute attribute="ent1#att10"/>
+          <layout:Link link="sv2#area3#page3#pwu13#ln58"/>
+          <layout:Link link="sv2#area3#page3#pwu13ent1#att10"/>
+          <layout:Link link="sv2#area3#page3#pwu13First"/>
+          <layout:Link link="sv2#area3#page3#pwu13Previous"/>
+          <layout:Link link="sv2#area3#page3#pwu13Block"/>
+          <layout:Link link="sv2#area3#page3#pwu13Next"/>
+          <layout:Link link="sv2#area3#page3#pwu13Last"/>
+        </layout:Unit>
+      </layout:Cell>
+    </layout:Row>
+  </layout:Grid>
+</Page>
