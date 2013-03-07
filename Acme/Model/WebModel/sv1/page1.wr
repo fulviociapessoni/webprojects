@@ -1,4 +1,4 @@
-<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page1" name="Home" gr:x="235" gr:y="190" landmark="true">
+<Page xmlns:gr="http://www.webratio.com/2006/WebML/Graph" xmlns:layout="http://www.webratio.com/2006/WebML/Layout" id="sv1#page1" name="Home" gr:x="235" gr:y="190" landmark="true" secure="true">
   <ContentUnits>
     <EntryUnit id="sv1#page1#enu2" name="Please Login (use manager/manager)" gr:x="265" gr:y="0" linkOrder="sv1#page1#enu2#ln17">
       <Field id="sv1#page1#enu2#fld3" name="username" modifiable="true" hidden="false" type="string"/>
