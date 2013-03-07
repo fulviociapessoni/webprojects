@@ -8,7 +8,7 @@
         <LinkParameter id="sv1#page1#enu2#ln17#par49" name="password_2_Password" source="sv1#page1#enu2#fld4" target="sv1#lgu2.password" blank="false"/>
       </Link>
     </EntryUnit>
-    <DataUnit id="sv1#page1#dau15" name="Offer of the day" entity="ent4" gr:x="130" gr:y="5" displayAttributes="ent4#att5 ent4#att7 ent4#att6">
+    <DataUnit id="sv1#page1#dau15" name="Offer of the day" entity="ent4" gr:x="130" gr:y="5" displayAll="true" linkOrder="sv1#page1#dau15#ln29">
       <Selector booleanOperator="and" defaultPolicy="fill" id="sv1#page1#dau15#dau15sel">
         <AttributesCondition id="sv1#page1#dau15#dau15sel#cond3" attributes="ent4#att22" name="highlight" implied="false" value="true" booleanOperator="or" predicate="eq"/>
       </Selector>
@@ -25,10 +25,15 @@
     <layout:Row>
       <layout:Cell>
         <layout:Unit unitId="sv1#page1#dau15">
-          <layout:Attribute attribute="ent4#att5"/>
-          <layout:Attribute attribute="ent4#att7"/>
-          <layout:Attribute attribute="ent4#att6"/>
           <layout:Link link="sv1#page1#dau15#ln29"/>
+          <layout:Attribute attribute="ent4#att3"/>
+          <layout:Attribute attribute="ent4#att4"/>
+          <layout:Attribute attribute="ent4#att5"/>
+          <layout:Attribute attribute="ent4#att6"/>
+          <layout:Attribute attribute="ent4#att7"/>
+          <layout:Attribute attribute="ent4#att20"/>
+          <layout:Attribute attribute="ent4#att21"/>
+          <layout:Attribute attribute="ent4#att22"/>
         </layout:Unit>
       </layout:Cell>
       <layout:Cell>
