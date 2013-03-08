@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 <Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area2" name="Offers" gr:x="780" gr:y="435" landmark="true" defaultPage="sv1#area2#page6">
+=======
+<Area xmlns:gr="http://www.webratio.com/2006/WebML/Graph" id="sv1#area2" name="Offers" gr:x="670" gr:y="570" landmark="true" defaultPage="sv1#area2#page6">
+>>>>>>> refs/remotes/origin/master
   <OperationUnits/>
 </Area>
