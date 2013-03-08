@@ -35,8 +35,6 @@
           <layout:Attribute attribute="ent4#att21"/>
           <layout:Attribute attribute="ent4#att22"/>
         </layout:Unit>
-      </layout:Cell>
-      <layout:Cell>
         <layout:Unit unitId="sv1#page1#dau16">
           <layout:Link link="sv1#page1#dau16#ln30"/>
           <layout:Attribute attribute="ent1#att8"/>
@@ -47,6 +45,7 @@
           <layout:Attribute attribute="ent1#att23"/>
         </layout:Unit>
       </layout:Cell>
+      <layout:Cell/>
     </layout:Row>
   </layout:Grid>
   <layout:CustomLocation name="Right Location">
